@@ -1,3 +1,3 @@
 add_subdirectory(libplist)
 add_subdirectory(libusbmuxd)
-#add_subdirectory(libimobiledevice)
+add_subdirectory(libimobiledevice)
