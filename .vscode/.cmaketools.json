@@ -25,23 +25,6 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ContinuousStart",
-                      "build/CMakeFiles/ContinuousStart.rule"
-                    ]
-                  }
-                ],
-                "fullName": "ContinuousStart",
-                "isGeneratorProvided": false,
-                "name": "ContinuousStart",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
                       "build/CMakeFiles/NightlySubmit",
                       "build/CMakeFiles/NightlySubmit.rule"
                     ]
@@ -110,100 +93,14 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ExperimentalStart",
-                      "build/CMakeFiles/ExperimentalStart.rule"
+                      "build/CMakeFiles/ExperimentalCoverage",
+                      "build/CMakeFiles/ExperimentalCoverage.rule"
                     ]
                   }
                 ],
-                "fullName": "ExperimentalStart",
+                "fullName": "ExperimentalCoverage",
                 "isGeneratorProvided": false,
-                "name": "ExperimentalStart",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "artifacts": [
-                  "/home/metizik/projects/github/mettizik/idevicecpp/build/deps/libplist/liblibplist.a"
-                ],
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build/deps/libplist",
-                "fileGroups": [
-                  {
-                    "compileFlags": "-g  ",
-                    "includePath": [
-                      {
-                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/include"
-                      },
-                      {
-                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist/include"
-                      },
-                      {
-                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist/src"
-                      }
-                    ],
-                    "isGenerated": false,
-                    "language": "C",
-                    "sources": [
-                      "src/base64.c",
-                      "src/bplist.c",
-                      "src/bytearray.c",
-                      "src/hashtable.c",
-                      "src/plist.c",
-                      "src/ptrarray.c",
-                      "src/time64.c",
-                      "src/xplist.c"
-                    ]
-                  }
-                ],
-                "fullName": "liblibplist.a",
-                "isGeneratorProvided": false,
-                "linkerLanguage": "C",
-                "name": "libplist",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist",
-                "type": "STATIC_LIBRARY"
-              },
-              {
-                "artifacts": [
-                  "/home/metizik/projects/github/mettizik/idevicecpp/build/test/loadtbb"
-                ],
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build/test",
-                "fileGroups": [
-                  {
-                    "compileFlags": "-g  ",
-                    "includePath": [
-                      {
-                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/include"
-                      }
-                    ],
-                    "isGenerated": false,
-                    "language": "CXX",
-                    "sources": [
-                      "loadtbb.cpp"
-                    ]
-                  }
-                ],
-                "fullName": "loadtbb",
-                "isGeneratorProvided": false,
-                "linkFlags": "-rdynamic",
-                "linkLanguageFlags": "-g",
-                "linkerLanguage": "CXX",
-                "name": "loadtbb",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/test",
-                "type": "EXECUTABLE"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
-                      "build/CMakeFiles/NightlyBuild",
-                      "build/CMakeFiles/NightlyBuild.rule"
-                    ]
-                  }
-                ],
-                "fullName": "NightlyBuild",
-                "isGeneratorProvided": false,
-                "name": "NightlyBuild",
+                "name": "ExperimentalCoverage",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               },
@@ -213,14 +110,31 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ExperimentalUpdate",
-                      "build/CMakeFiles/ExperimentalUpdate.rule"
+                      "build/CMakeFiles/NightlyMemCheck",
+                      "build/CMakeFiles/NightlyMemCheck.rule"
                     ]
                   }
                 ],
-                "fullName": "ExperimentalUpdate",
+                "fullName": "NightlyMemCheck",
                 "isGeneratorProvided": false,
-                "name": "ExperimentalUpdate",
+                "name": "NightlyMemCheck",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/ContinuousStart",
+                      "build/CMakeFiles/ContinuousStart.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ContinuousStart",
+                "isGeneratorProvided": false,
+                "name": "ContinuousStart",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               },
@@ -281,40 +195,6 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ExperimentalMemCheck",
-                      "build/CMakeFiles/ExperimentalMemCheck.rule"
-                    ]
-                  }
-                ],
-                "fullName": "ExperimentalMemCheck",
-                "isGeneratorProvided": false,
-                "name": "ExperimentalMemCheck",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
-                      "build/CMakeFiles/ExperimentalTest",
-                      "build/CMakeFiles/ExperimentalTest.rule"
-                    ]
-                  }
-                ],
-                "fullName": "ExperimentalTest",
-                "isGeneratorProvided": false,
-                "name": "ExperimentalTest",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
                       "build/CMakeFiles/NightlyUpdate",
                       "build/CMakeFiles/NightlyUpdate.rule"
                     ]
@@ -361,34 +241,38 @@
                 "type": "UTILITY"
               },
               {
-                "artifacts": [
-                  "/home/metizik/projects/github/mettizik/idevicecpp/build/idevicecpp"
-                ],
                 "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
                 "fileGroups": [
                   {
-                    "compileFlags": "-g  ",
-                    "includePath": [
-                      {
-                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/include"
-                      }
-                    ],
-                    "isGenerated": false,
-                    "language": "CXX",
+                    "isGenerated": true,
                     "sources": [
-                      "src/main.cpp"
+                      "build/CMakeFiles/ContinuousSubmit",
+                      "build/CMakeFiles/ContinuousSubmit.rule"
                     ]
                   }
                 ],
-                "fullName": "idevicecpp",
+                "fullName": "ContinuousSubmit",
                 "isGeneratorProvided": false,
-                "linkFlags": "-rdynamic",
-                "linkLanguageFlags": "-g",
-                "linkLibraries": "-lcrypto",
-                "linkerLanguage": "CXX",
-                "name": "idevicecpp",
+                "name": "ContinuousSubmit",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "EXECUTABLE"
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/ContinuousMemCheck",
+                      "build/CMakeFiles/ContinuousMemCheck.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ContinuousMemCheck",
+                "isGeneratorProvided": false,
+                "name": "ContinuousMemCheck",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "UTILITY"
               },
               {
                 "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
@@ -447,14 +331,14 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ExperimentalCoverage",
-                      "build/CMakeFiles/ExperimentalCoverage.rule"
+                      "build/CMakeFiles/ContinuousConfigure",
+                      "build/CMakeFiles/ContinuousConfigure.rule"
                     ]
                   }
                 ],
-                "fullName": "ExperimentalCoverage",
+                "fullName": "ContinuousConfigure",
                 "isGeneratorProvided": false,
-                "name": "ExperimentalCoverage",
+                "name": "ContinuousConfigure",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               },
@@ -464,14 +348,114 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/NightlyMemCheck",
-                      "build/CMakeFiles/NightlyMemCheck.rule"
+                      "build/CMakeFiles/ExperimentalSubmit",
+                      "build/CMakeFiles/ExperimentalSubmit.rule"
                     ]
                   }
                 ],
-                "fullName": "NightlyMemCheck",
+                "fullName": "ExperimentalSubmit",
                 "isGeneratorProvided": false,
-                "name": "NightlyMemCheck",
+                "name": "ExperimentalSubmit",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/ExperimentalMemCheck",
+                      "build/CMakeFiles/ExperimentalMemCheck.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ExperimentalMemCheck",
+                "isGeneratorProvided": false,
+                "name": "ExperimentalMemCheck",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "UTILITY"
+              },
+              {
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/ExperimentalTest",
+                      "build/CMakeFiles/ExperimentalTest.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ExperimentalTest",
+                "isGeneratorProvided": false,
+                "name": "ExperimentalTest",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "UTILITY"
+              },
+              {
+                "artifacts": [
+                  "/home/metizik/projects/github/mettizik/idevicecpp/build/deps/libplist/libPlist.a"
+                ],
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build/deps/libplist",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g  ",
+                    "includePath": [
+                      {
+                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/include"
+                      },
+                      {
+                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist/include"
+                      },
+                      {
+                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist/src"
+                      },
+                      {
+                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist/libcnary/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "C",
+                    "sources": [
+                      "src/base64.c",
+                      "src/bplist.c",
+                      "src/bytearray.c",
+                      "src/hashtable.c",
+                      "src/plist.c",
+                      "src/ptrarray.c",
+                      "src/time64.c",
+                      "src/xplist.c",
+                      "libcnary/cnary.c",
+                      "libcnary/iterator.c",
+                      "libcnary/list.c",
+                      "libcnary/node.c",
+                      "libcnary/node_iterator.c",
+                      "libcnary/node_list.c"
+                    ]
+                  }
+                ],
+                "fullName": "libPlist.a",
+                "isGeneratorProvided": false,
+                "linkerLanguage": "C",
+                "name": "Plist",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/deps/libplist",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "isGenerated": true,
+                    "sources": [
+                      "build/CMakeFiles/ExperimentalStart",
+                      "build/CMakeFiles/ExperimentalStart.rule"
+                    ]
+                  }
+                ],
+                "fullName": "ExperimentalStart",
+                "isGeneratorProvided": false,
+                "name": "ExperimentalStart",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               },
@@ -527,19 +511,50 @@
                 "type": "UTILITY"
               },
               {
+                "artifacts": [
+                  "/home/metizik/projects/github/mettizik/idevicecpp/build/idevicecpp"
+                ],
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g  ",
+                    "includePath": [
+                      {
+                        "path": "/home/metizik/projects/github/mettizik/idevicecpp/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/main.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "idevicecpp",
+                "isGeneratorProvided": false,
+                "linkFlags": "-rdynamic",
+                "linkLanguageFlags": "-g",
+                "linkLibraries": "deps/libplist/libPlist.a -lpthread",
+                "linkPath": "-L/usr/lib/gcc/x86_64-linux-gnu/8",
+                "linkerLanguage": "CXX",
+                "name": "idevicecpp",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "EXECUTABLE"
+              },
+              {
                 "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
                 "fileGroups": [
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ContinuousSubmit",
-                      "build/CMakeFiles/ContinuousSubmit.rule"
+                      "build/CMakeFiles/NightlyBuild",
+                      "build/CMakeFiles/NightlyBuild.rule"
                     ]
                   }
                 ],
-                "fullName": "ContinuousSubmit",
+                "fullName": "NightlyBuild",
                 "isGeneratorProvided": false,
-                "name": "ContinuousSubmit",
+                "name": "NightlyBuild",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               },
@@ -549,48 +564,14 @@
                   {
                     "isGenerated": true,
                     "sources": [
-                      "build/CMakeFiles/ContinuousMemCheck",
-                      "build/CMakeFiles/ContinuousMemCheck.rule"
+                      "build/CMakeFiles/ExperimentalUpdate",
+                      "build/CMakeFiles/ExperimentalUpdate.rule"
                     ]
                   }
                 ],
-                "fullName": "ContinuousMemCheck",
+                "fullName": "ExperimentalUpdate",
                 "isGeneratorProvided": false,
-                "name": "ContinuousMemCheck",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
-                      "build/CMakeFiles/ContinuousConfigure",
-                      "build/CMakeFiles/ContinuousConfigure.rule"
-                    ]
-                  }
-                ],
-                "fullName": "ContinuousConfigure",
-                "isGeneratorProvided": false,
-                "name": "ContinuousConfigure",
-                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
-                "type": "UTILITY"
-              },
-              {
-                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
-                "fileGroups": [
-                  {
-                    "isGenerated": true,
-                    "sources": [
-                      "build/CMakeFiles/ExperimentalSubmit",
-                      "build/CMakeFiles/ExperimentalSubmit.rule"
-                    ]
-                  }
-                ],
-                "fullName": "ExperimentalSubmit",
-                "isGeneratorProvided": false,
-                "name": "ExperimentalSubmit",
+                "name": "ExperimentalUpdate",
                 "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
                 "type": "UTILITY"
               }
@@ -599,7 +580,7 @@
         ]
       }
     ],
-    "cookie": "0.4169310674371858",
+    "cookie": "0.7563226411266555",
     "inReplyTo": "codemodel",
     "type": "reply"
   }

@@ -1,11 +1,11 @@
 #include <iostream>
 #include "idevicecpp/idevicecpp.h"
-#include <openssl/x509.h>
+#include <plist/plist.h>
 
 #ifdef idevicecpp
 int main(int, char**)
 {
-    X509_new();
+    plist_new_bool(1);
    std::cout << "Hello, world!\n";
 }
 #endif
