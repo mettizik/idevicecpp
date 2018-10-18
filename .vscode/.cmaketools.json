@@ -1,0 +1,55 @@
+{
+  "variant": {
+    "label": "Debug",
+    "keywordSettings": {
+      "buildType": "debug"
+    },
+    "description": "Emit debug information without performing optimizations"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+            "hasInstallRule": false,
+            "minimumCMakeVersion": "3.0.0",
+            "name": "idevicecpp",
+            "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+            "targets": [
+              {
+                "artifacts": [
+                  "/home/metizik/projects/github/mettizik/idevicecpp/build/idevicecpp"
+                ],
+                "buildDirectory": "/home/metizik/projects/github/mettizik/idevicecpp/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g  ",
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "main.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "idevicecpp",
+                "isGeneratorProvided": false,
+                "linkFlags": "-rdynamic",
+                "linkLanguageFlags": "-g",
+                "linkerLanguage": "CXX",
+                "name": "idevicecpp",
+                "sourceDirectory": "/home/metizik/projects/github/mettizik/idevicecpp",
+                "type": "EXECUTABLE"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.34126213295735686",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}

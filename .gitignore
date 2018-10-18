@@ -1,0 +1,7 @@
+build
+*.o
+*.obj
+*.lo
+*.lib
+*.la
+
