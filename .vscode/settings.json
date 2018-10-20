@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "plist.h": "c"
-    }
+    },
+    "C_Cpp.formatting": "Disabled",
+    "editor.formatOnSave": false
 }

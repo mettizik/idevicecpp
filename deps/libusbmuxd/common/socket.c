@@ -26,9 +26,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
 #include <errno.h>
-#include <sys/time.h>
 #include <sys/stat.h>
 #ifdef WIN32
 #include <winsock2.h>
@@ -43,8 +41,16 @@ static int wsa_init = 0;
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <sys/time.h>
 #endif
 #include "socket.h"
+
+#ifdef WIN32
+#ifndef __func__
+#define __func__ __FUNCTION__
+#endif
+#endif
 
 #define RECV_TIMEOUT 20000
 #define CONNECT_TIMEOUT 5000

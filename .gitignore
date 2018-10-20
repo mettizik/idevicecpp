@@ -4,4 +4,6 @@ build
 *.lo
 *.lib
 *.la
-
+CMakeFiles
+CMakeCache.txt
+*.vc*

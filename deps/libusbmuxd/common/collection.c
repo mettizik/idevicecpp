@@ -28,6 +28,12 @@
 #include <stdio.h>
 #include "collection.h"
 
+#ifdef WIN32
+#ifndef __func__
+#define __func__ __FUNCTION__
+#endif
+#endif
+
 void collection_init(struct collection *col)
 {
 	col->list = malloc(sizeof(void *));

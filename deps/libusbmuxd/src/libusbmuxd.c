@@ -30,7 +30,11 @@
 #include <string.h>
 
 #ifdef WIN32
+#ifdef DYNAMIC
   #define USBMUXD_API __declspec( dllexport )
+#else
+    #define USBMUXD_API
+#endif
 #else
   #ifdef HAVE_FVISIBILITY
     #define USBMUXD_API __attribute__((visibility("default")))
@@ -46,16 +50,19 @@
 #define EBADMSG 104
 #endif
 
-#include <unistd.h>
 #include <signal.h>
 
 #ifdef WIN32
+#ifndef __func__
+#define __func__ __FUNCTION__
+#endif
 #include <winsock2.h>
 #include <windows.h>
 #ifndef HAVE_SLEEP
 #define sleep(x) Sleep(x*1000)
 #endif
 #else
+#include <unistd.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <pthread.h>
