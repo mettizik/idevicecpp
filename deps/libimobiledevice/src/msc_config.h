@@ -6,5 +6,8 @@
 #define __func__ __FUNCTION__
 #define strncasecmp _strnicmp
 #define strcasecmp _stricmp
-#define PACKAGE_STRING "libusbmuxd 1.1.0"
+#ifndef PACKAGE_STRING
+#define PACKAGE_STRING "libimobiledevice 1.1.0"
+#endif
+#include <windows.h>
 #endif

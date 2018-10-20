@@ -22,7 +22,7 @@
 
 #ifndef __DEBUG_H
 #define __DEBUG_H
-
+#include <msc_config.h>
 #include <plist/plist.h>
 
 #if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L && !defined(STRIP_DEBUG_CODE)

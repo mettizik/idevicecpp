@@ -25,7 +25,7 @@
 #define IMOBILE_IMAGE_MOUNTER_H
 
 #if defined(_MSC_VER)
-#include <BaseTsd.h>
+#include <windows.h>
 typedef SSIZE_T ssize_t;
 #endif
 

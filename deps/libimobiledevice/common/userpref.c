@@ -23,7 +23,7 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
-
+#include <msc_config.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -37,6 +37,7 @@
 
 #ifndef _MSC_VER
 #include <unistd.h>
+#include <libgen.h>
 #endif
 #include <usbmuxd.h>
 #ifdef HAVE_OPENSSL
@@ -53,7 +54,6 @@
 #endif
 
 #include <dirent.h>
-#include <libgen.h>
 #include <sys/stat.h>
 #include <errno.h>
 
