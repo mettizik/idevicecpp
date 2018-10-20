@@ -23,11 +23,14 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
 #include <errno.h>
+#ifndef _MSC_VER
+#include <unistd.h>
 #include <sys/time.h>
 #include <sys/stat.h>
+#endif
 #ifdef WIN32
+
 #include <winsock2.h>
 #include <windows.h>
 static int wsa_init = 0;
@@ -39,6 +42,10 @@ static int wsa_init = 0;
 #include <arpa/inet.h>
 #endif
 #include "socket.h"
+
+#ifdef _MSC_VER
+#include "msc_config.h"
+#endif
 
 #define RECV_TIMEOUT 20000
 

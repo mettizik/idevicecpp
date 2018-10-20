@@ -23,7 +23,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include <inttypes.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 #include <plist/plist.h>
 
 #include "installation_proxy.h"

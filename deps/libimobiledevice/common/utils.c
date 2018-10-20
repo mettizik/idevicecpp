@@ -27,12 +27,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <sys/time.h>
 #include <inttypes.h>
 #include <ctype.h>
 
 #include "utils.h"
-
+#ifndef _MSC_VER
+#include <sys/time.h>
+#endif
 #ifndef HAVE_STPCPY
 /**
  * Copy characters from one string into another

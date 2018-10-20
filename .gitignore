@@ -6,4 +6,3 @@ build
 *.la
 CMakeFiles
 CMakeCache.txt
-*.vc*

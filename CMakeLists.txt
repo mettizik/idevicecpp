@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(idevicecpp VERSION 0.0.0)
 
+add_definitions(-DHAVE_OPENSSL)
 include(CTest)
 enable_testing()
 
@@ -21,3 +22,4 @@ add_subdirectory(include)
 add_subdirectory(deps)
 add_subdirectory(src)
 add_subdirectory(test)
+

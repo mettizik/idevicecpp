@@ -34,7 +34,11 @@
 #endif
 
 #ifdef WIN32
+#ifdef DYNAMIC
 #define LIBIMOBILEDEVICE_API __declspec( dllexport )
+#else
+#define LIBIMOBILEDEVICE_API
+#endif
 #else
 #ifdef HAVE_FVISIBILITY
 #define LIBIMOBILEDEVICE_API __attribute__((visibility("default")))

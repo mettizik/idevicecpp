@@ -32,7 +32,9 @@
 #define __USE_GNU 1
 #include <stdio.h>
 #include <ctype.h>
+#ifndef _MSC_VER
 #include <unistd.h>
+#endif
 #ifdef HAVE_OPENSSL
 #include <openssl/pem.h>
 #include <openssl/x509.h>
