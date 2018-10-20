@@ -83,7 +83,7 @@ extern int _NSGetExecutablePath(char* buf, uint32_t* bufsize);
 #define USBMUXD_SOCKET_NAME "usbmuxd"
 #endif /* HAVE_INOTIFY */
 
-#ifndef HAVE_STPNCPY
+//#ifndef HAVE_STPNCPY
 static char* stpncpy(char *dst, const char *src, size_t len)
 {
 	size_t n = strlen(src);
@@ -91,7 +91,7 @@ static char* stpncpy(char *dst, const char *src, size_t len)
 		n = len;
 	return strncpy(dst, src, len) + n;
 }
-#endif
+//#endif
 
 #include <plist/plist.h>
 #define PLIST_CLIENT_VERSION_STRING PACKAGE_STRING

@@ -135,6 +135,7 @@ static thread_once_t init_once = THREAD_ONCE_INIT;
 static thread_once_t deinit_once = THREAD_ONCE_INIT;
 
 #ifdef WIN32
+/*
 BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
 	switch (dwReason) {
@@ -149,6 +150,7 @@ BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 	}
 	return 1;
 }
+*/
 #else
 static void __attribute__((constructor)) libimobiledevice_initialize(void)
 {

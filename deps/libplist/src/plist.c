@@ -58,6 +58,7 @@ static void internal_plist_deinit(void)
 
 #ifdef WIN32
 
+/*
 typedef volatile struct {
     LONG lock;
     int state;
@@ -77,7 +78,6 @@ void thread_once(thread_once_t *once_control, void (*init_routine)(void))
     }
     InterlockedExchange(&(once_control->lock), 0);
 }
-
 BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
     switch (dwReason) {
@@ -91,7 +91,7 @@ BOOL WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
         break;
     }
     return 1;
-}
+}*/
 
 #else
 
