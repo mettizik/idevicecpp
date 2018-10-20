@@ -1,3 +1,6 @@
 add_subdirectory(libplist)
 add_subdirectory(libusbmuxd)
 add_subdirectory(libimobiledevice)
+if(WIN32)
+    add_subdirectory(dirent)
+endif(WIN32)
