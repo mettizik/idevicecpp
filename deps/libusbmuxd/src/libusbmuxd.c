@@ -83,7 +83,7 @@ extern int _NSGetExecutablePath(char* buf, uint32_t* bufsize);
 #define USBMUXD_SOCKET_NAME "usbmuxd"
 #endif /* HAVE_INOTIFY */
 
-//#ifndef HAVE_STPNCPY
+#ifndef HAVE_STPNCPY
 static char* stpncpy(char *dst, const char *src, size_t len)
 {
 	size_t n = strlen(src);
@@ -91,7 +91,7 @@ static char* stpncpy(char *dst, const char *src, size_t len)
 		n = len;
 	return strncpy(dst, src, len) + n;
 }
-//#endif
+#endif
 
 #include <plist/plist.h>
 #define PLIST_CLIENT_VERSION_STRING PACKAGE_STRING
@@ -796,7 +796,7 @@ static int send_pair_record_packet(int sfd, uint32_t tag, const char* msgtype, c
 	if (device_id > 0) {
 		plist_dict_set_item(plist, "DeviceID", plist_new_uint(device_id));
 	}
-	
+
 	res = send_plist_packet(sfd, tag, plist);
 	plist_free(plist);
 
@@ -1433,7 +1433,7 @@ USBMUXD_API int usbmuxd_send(int sfd, const char *data, uint32_t len, uint32_t *
 	if (sfd < 0) {
 		return -EINVAL;
 	}
-	
+
 	num_sent = socket_send(sfd, (void*)data, len);
 	if (num_sent < 0) {
 		*sent_bytes = 0;

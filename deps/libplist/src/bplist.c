@@ -121,6 +121,10 @@ uint16_t get_unaligned_16(uint16_t *ptr)
     } *__p = (void *) (ptr);			  \
     __p->__v;					  \
   })
+
+#define get_unaligned_64 get_unaligned
+#define get_unaligned_32 get_unaligned
+#define get_unaligned_16 get_unaligned
 #endif
 
 
@@ -383,7 +387,7 @@ static char *plist_utf16_to_utf8(uint16_t *unistr, long len, long *items_read, l
 				read_lead_surrogate = 1;
 				w = 0x010000 + ((wc & 0x3FF) << 10);
 			} else {
-				// This is invalid, the next 16 bit char should be a trail surrogate. 
+				// This is invalid, the next 16 bit char should be a trail surrogate.
 				// Handling error by skipping.
 				read_lead_surrogate = 0;
 			}

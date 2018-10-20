@@ -37,7 +37,6 @@
 #ifdef HAVE_OPENSSL
 #include <openssl/err.h>
 #include <openssl/ssl.h>
-
 #else
 #include <gnutls/gnutls.h>
 #endif

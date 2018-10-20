@@ -11,7 +11,6 @@ include(CheckIncludeFiles)
 include(ExternalProject)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-
 add_executable(idevicecpp src/main.cpp)
 target_include_directories(idevicecpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/deps/libplist/include)
 target_link_libraries(idevicecpp Plist)
