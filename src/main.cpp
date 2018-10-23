@@ -74,6 +74,12 @@ private:
 int main(int, char**)
 {
     try {
+        usbmuxd_subscribe(NULL, NULL);
+        idevice_t device = NULL;
+        idevice_new(&device, NULL);
+        char* udid = nullptr;
+        idevice_get_udid(device, &udid);
+        std::cout << udid << std::endl;
         Plist pl(plist_new_dict());
         return 0;
     } catch (const std::exception& ex) {

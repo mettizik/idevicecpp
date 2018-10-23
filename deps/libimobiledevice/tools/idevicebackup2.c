@@ -67,39 +67,6 @@
 #endif
 #include <sys/stat.h>
 #include "usbmuxd.h"
-int strncasecmp(const char* s1, const char* s2, size_t c)
-{
-    return _strnicmp(s1, s2, c);
-}
-
-int strcasecmp(const char* s1, const char* s2)
-{
-    return _stricmp(s1, s2);
-}
-
-int vasprintf(char **PTR, const char *TEMPLATE, va_list AP)
-{
-    int res;
-    char buf[16];
-    res = vsnprintf(buf, 16, TEMPLATE, AP);
-    if (res > 0)
-    {
-        *PTR = (char*)malloc(res + 1);
-        res = vsnprintf(*PTR, res + 1, TEMPLATE, AP);
-    }
-    return res;
-}
-
-int asprintf(char **PTR, const char *TEMPLATE, ...)
-{
-    int res;
-    va_list AP;
-    va_start(AP, TEMPLATE);
-    res = vasprintf(PTR, TEMPLATE, AP);
-    va_end(AP);
-    return res;
-}
-
 
 /*
 char *stpncpy(char *dest, const char *src, size_t len)
@@ -119,29 +86,6 @@ char* stpncpy(char *dst, const char *src, size_t len)
     return strncpy(dst, src, len) + n;
 }
 */
-int vsnprintf(char *outBuf, size_t size, const char *format, va_list ap)
-{
-    int count = -1;
-
-    if (size != 0)
-        count = _vsnprintf_s(outBuf, size, _TRUNCATE, format, ap);
-    if (count == -1)
-        count = _vscprintf(format, ap);
-
-    return count;
-}
-
-int snprintf(char *outBuf, size_t size, const char *format, ...)
-{
-    int count;
-    va_list ap;
-
-    va_start(ap, format);
-    count = vsnprintf(outBuf, size, format, ap);
-    va_end(ap);
-
-    return count;
-}
 
 
 #define CODE_SUCCESS 0x00

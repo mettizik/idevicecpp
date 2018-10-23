@@ -55,6 +55,9 @@
 #ifdef WIN32
 #ifndef __func__
 #define __func__ __FUNCTION__
+#ifdef _MSC_VER
+#define strcasecmp stricmp
+#endif
 #endif
 #include <winsock2.h>
 #include <windows.h>

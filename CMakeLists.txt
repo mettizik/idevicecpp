@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(idevicecpp VERSION 0.0.0)
 
-add_definitions(-DHAVE_OPENSSL)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
+find_package(OpenSSL REQUIRED)
+if(OPENSSL_FOUND)
+    add_definitions(-DHAVE_OPENSSL)
+endif(OPENSSL_FOUND)
+
 include(CTest)
 enable_testing()
 
@@ -18,8 +25,7 @@ target_include_directories(idevicecpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/deps/l
 target_link_libraries(idevicecpp Plist)
 target_link_libraries(idevicecpp UsbMuxd)
 target_link_libraries(idevicecpp iMobileDevice)
-target_link_libraries(idevicecpp crypto)
-target_link_libraries(idevicecpp ssl)
+target_link_libraries(idevicecpp ${CONAN_LIBS_OPENSSL})
 if (UNIX)
     target_link_libraries(idevicecpp pthread)
 else(UNIX)
