@@ -29,15 +29,18 @@
 #define _XOPEN_SOURCE 600
 #endif
 
-#ifdef _MSC_VER
-#define snprintf _snprintf;
-#endif
-
 #include <string.h>
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
+#ifdef _MSC_VER
+#ifndef snprintf
+#define snprintf vsnprintf;
+#endif 
+#endif
+
 
 #include <inttypes.h>
 #include <math.h>
