@@ -75,8 +75,6 @@ int main(int, char**)
 {
     try {
         Plist pl(plist_new_dict());
-        pl["key"] = "value";
-        pl.at("key");
         return 0;
     } catch (const std::exception& ex) {
         std::cerr << ex.what() << std::endl;
